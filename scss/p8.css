@@ -1,0 +1,65 @@
+/* Main Setting  */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ruwudu", serif !important;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  opacity: 1 !important;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+
+span {
+  line-height: 1.7;
+}
+span,p {
+  font-size: 27px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button button {
+  background-color: #7c4ab6;
+  color: #FFF;
+  border: 0;
+  outline: 0;
+  width: 150px;
+  height: 40px;
+  line-height: 46px;
+  display: block;
+  border-radius: 7px;
+  font-size: 19px;
+  transition: .3s;
+}
+.button button:hover {
+  background-color: transparent;
+  color: #7c4ab6;
+  border: 2px solid #7c4ab6;
+}

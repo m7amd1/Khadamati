@@ -1,0 +1,198 @@
+body {
+  position: relative;
+  .custom-shape-divider-top-1711922134 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+    svg {
+      position: relative;
+      display: block;
+      width: calc(300% + 1.3px);
+      height: 484px;
+    }
+    .shape-fill {
+      fill: #7C4AB6;
+    }
+  }
+  .formm {
+    overflow-x: hidden;
+    .nav {
+      padding: 1px 10px;  
+      .navbar-brand {
+        margin: 0;
+      }
+      .navbar-toggler {
+        background-color: $white;
+        border: none !important;
+        outline: none !important;
+      }
+      .links {
+        justify-content: flex-end;
+        a {
+          color: $white !important;
+          font-weight: bold;
+          font-size: 17px;
+        }
+      }
+    }
+    .signupForm {
+      position: relative;
+      padding: 60px 60px 30px;
+      background-color: $white;
+      box-shadow: 0px 0px 3px $purple;
+      width: 1000px;
+      margin: 0 auto 10px;
+      .form-row {
+        display: flex;
+        gap: 20px;
+        .form-group {
+          flex: 1;
+          height: 60px;
+        }
+        .group2 {
+          display: block;
+          height: 40px;
+          text-align: left;
+          padding-left: 70px;
+          padding-top: 10px;
+          font: 22px sans-serif;
+          position: relative;
+          top: 0;
+          left: 0;
+          .showpass {
+            position: absolute;
+            left: 15px;
+            bottom: 50px;
+            font-size: 18px;
+            cursor: pointer;
+          }
+        }
+      }
+      .btn {
+        background-color: $purple !important;
+        border: 1px solid $purple !important;
+        width: 100%;
+      }
+      .have-acc {
+        color: $dark;
+        font-size: 15px;
+        margin-top: 16px;
+        display: block;
+        a {
+          color: $purple;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .alert {
+    height: 60px !important;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+  .navbar-brand img {
+    width: 150px;
+    height: auto;
+  }
+
+  .signupForm {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+}
+
+.theme {
+  .formm {
+    .signupForm {
+      background-color: $dark;
+      color: $white;
+      input {
+        background-color: $lightDark;
+        color: $white;
+        &::placeholder {
+          color: $white;
+        }
+      }
+      .have-acc {
+        color: $white;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.js {
+  .input-file:hover + .input-file-trigger,
+  .input-file:focus + .input-file-trigger,
+  .input-file-trigger:hover,
+  .input-file-trigger:focus {
+    background: #612d9d;
+    color: #fff;
+  }
+  .input-file-container {
+    position: relative;
+    margin: 31px 0 0;
+    .input-file {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 225px;
+      opacity: 0;
+      padding: 14px 0;
+      cursor: pointer;
+    }
+    .input-file-trigger {
+      border-radius: 8px;
+      display: block;
+      padding: 7px 15px;
+      background: #7c4ab6;
+      color: #fff;
+      font-size: 1rem;
+      transition: all .4s;
+      cursor: pointer;
+    }    
+  }
+}
+
+
+.file-return {
+  margin: 0;
+}
+
+.js {
+  .file-return {
+    font-style: italic;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .file-return:not(:empty):before {
+    content: "Selected file: ";
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+
+.form-control:focus {
+  border-color: #7c4ab6 !important;
+  box-shadow: 0 0 0 0.25rem #7c4ab6 !important;
+}
+
+.form-control option:hover {
+  background-color: #7c4ab6;
+  color: #fff;
+  padding: 8px;
+}
+
+label {
+  color: red;
+  font-size: 20px;
+}

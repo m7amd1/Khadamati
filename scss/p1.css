@@ -1,0 +1,188 @@
+/* Main Setting  */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Readex Pro", sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.head .pic {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+}
+hr {
+  opacity: 1 !important;
+}
+
+table, tr, td ,thead, tbody {
+  border: 1px solid rgb(114, 113, 113) !important;
+  font-size: 17px;
+}
+.sicone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sicone span {
+  font-size: 20px;
+  display: inline-block;
+}
+.sicone div .mr{
+  margin-right: 10px;
+}
+.sicone input {
+  display: inline;
+  width: 400px;
+  outline: none !important;
+}
+.sictwo {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sictwo input {
+  border: 0;
+  outline: 0;
+  font-size: 17px;
+}
+.sictwo input:focus {
+  box-shadow: none; 
+  border: none !important;   
+}
+.sicthree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sicthree input {
+  border: 0;
+  outline: 0;
+  width: 535px;
+  display: inline-block;
+  font-size: 17px;
+}
+.sicfour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.signn {
+  display: flex;
+  gap: 30px; 
+  border: 1px solid black;
+  width: 215px;
+  height: 81px;
+  padding: 0px 3px;
+  font-size: 15px;
+}
+.sign {
+  position: relative;
+}
+.sign::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -16px;
+  top: -2px;
+  width: 1px;
+  height: 81px;
+  background-color: black;
+}
+.sicfive {
+  margin-right: 80px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.button button {
+  background-color: #7c4ab6;
+  color: #FFF;
+  border: 0;
+  outline: 0;
+  width: 150px;
+  height: 40px;
+  display: block;
+  border-radius: 7px;
+  font-size: 19px;
+  transition: .3s;
+}
+.button button:hover {
+  background-color: transparent;
+  color: #7c4ab6;
+  border: 2px solid #7c4ab6;
+}
+
+
+@media print {
+  body {
+    margin-top: 5px;
+    margin-left: 10px;
+    transform: scale(.90);
+  }
+  table, tr, td ,thead, tbody {
+    border: 3px solid rgb(114, 113, 113) !important;
+    font-size: 17px;
+  }
+  .sicone div input {
+    width: 300px;
+  }
+  .sictwo {
+    margin-top: 40px !important;
+  }
+  .sictwo table input{
+    width: 130px !important;
+  }
+  .sicfour{
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .sicfour div:not(:last-child) {
+    flex: 0 0 100px !important;
+  }
+  .signn {
+    gap: 20px; 
+    flex: 0 0 200px !important;
+    padding: 0px 3px;
+  }
+  .button {
+    display: none;
+  }
+}

@@ -1,0 +1,140 @@
+/* Main Setting  */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Readex Pro", sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.head .pic {
+  width: 70px;
+  height: 70px;
+}
+.head .pic img {
+  filter: grayscale();
+  width: 100%;
+}
+hr {
+  opacity: 1 !important;
+}
+
+.input {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid black;
+  margin: 0 7px;
+}
+.title {
+  width: 300px;
+}
+.flexx {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexx input {
+  display: inline-block;
+  width: 250px;
+}
+.sictwo input{
+  width: 150px;
+}
+
+.free {
+  position: absolute;
+  left: 300px;
+  top: 180px;
+  border: 1px solid black;
+  padding: 30px 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.button button {
+  background-color: #7c4ab6;
+  color: #FFF;
+  border: 0;
+  outline: 0;
+  width: 150px;
+  height: 40px;
+  display: block;
+  border-radius: 7px;
+  font-size: 19px;
+  transition: .3s;
+}
+.button button:hover {
+  background-color: transparent;
+  color: #7c4ab6;
+  border: 2px solid #7c4ab6;
+}
+
+@media print {
+  body {
+    margin: 0;
+    width: 210mm; 
+    height: 267mm;
+    transform: scale(0.8); 
+    transform-origin: top center; 
+  }
+  .head {
+    font-size: 15px !important;
+  }
+  .container-xxl {
+    margin: 20px auto; 
+    width: 160mm;
+    font-size: 10px;
+  }
+  body > section.mt-5 {
+    margin-top: 0 !important;
+  }
+  .free {
+    top: 100px;
+    left: 20px;
+  }
+  .p-none {
+    margin-top: 17px !important;
+  }
+  h5 {
+    margin-top: 5px !important;
+  }
+  .flexx {
+    margin-top: 8px !important;
+  }
+  .flexx p {
+    margin: 0;
+  }
+  .button {
+    display: none;
+  }
+}

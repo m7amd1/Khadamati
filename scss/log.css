@@ -1,0 +1,360 @@
+/* Main Setting  */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden !important;
+  background-color: #f2f2f2 !important;
+  transition: background-color .6s cubic-bezier(.7, 0, .7, 1);  
+  font-family: "Readex Pro", sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+  padding: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.pd {
+  padding: 200px 0;
+}
+
+::selection {
+  color: #FFF;
+  background-color: #7c4ab6;
+}
+
+.custom-shape-divider-top-1711922134 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1711922134 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 484px;
+}
+
+.custom-shape-divider-top-1711922134 .shape-fill {
+  fill: #7C4AB6;
+}
+
+/* SIDEBAR */
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100%;
+  background: #7c4ab6;
+  z-index: 2000;
+  transition: 0.3s ease;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 40px;
+  gap: 100px;
+}
+#sidebar::--webkit-scrollbar {
+  display: none;
+}
+#sidebar.hide {
+  width: 60px;
+}
+
+#sidebar.hide .side-menu.top a {
+  display: none;
+}
+
+#sidebar.hide .side-menu.top div i {
+  display: block;
+  font-size: 18px;
+}
+
+/* Sidebar when expanded */
+#sidebar .side-menu.top a {
+  display: block;
+}
+
+#sidebar .side-menu.top div i {
+  display: inline;
+}
+
+#sidebar .side-menu.top div {
+  transition: all 0.3s;
+}
+#sidebar .side-menu {
+  margin-top: 78px;
+}
+#sidebar .side-menu div {
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+#sidebar .side-menu div:hover i,
+#sidebar .side-menu div:hover a {
+  color: #e4e4e4;
+}
+#sidebar .side-menu div a,
+#sidebar .side-menu div i {
+  font-size: 17px;
+  color: #fff;
+}
+
+/* SIDEBAR */
+
+/* Home Section */
+#content {
+  position: relative;
+  width: calc(100% - 280px);
+  right: 280px;
+  transition: 0.3s ease;
+}
+#sidebar.hide ~ #content {
+  width: calc(100% - 60px);
+  right: 60px;
+}
+/* Navbar */
+#content nav {
+  height: 60px;
+  background: #fff;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 24px;
+  position: sticky;
+  top: 10px;
+  left: 0;
+  z-index: 2;
+  transition: backdrop-filter 0.3s, background 0.3s;
+}
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px; 
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); 
+  pointer-events: none; 
+  z-index: 1; 
+  opacity: 0; 
+  transition: opacity 0.3s;
+}
+.blur-background.active {
+  opacity: 1; 
+}
+#content nav::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: -38px;
+  right: -23px;
+  border-radius: 50%;
+  box-shadow: 16px -20px 0 #fff;
+}
+#content nav .fa-bars {
+  cursor: pointer;
+  color: #060714;
+}
+
+#content nav .breadcrumb-item {
+  transition: 0.3s;
+  font-weight: bold;
+  color: #060714;
+}
+#content nav .breadcrumb-item a {
+  color: #060714;
+}
+#content nav .breadcrumb-item:hover a {
+  color: #0C0C1E;
+}
+
+#content nav .support a {
+  color: #060714;
+  transition: 0.3s;
+  font-weight: bold;
+}
+#content nav .support a:hover {
+  color: #0C0C1E;
+}
+#content nav .support a i {
+  padding-left: 6px;
+  color: #25d366;
+  font-size: 19px;
+}
+.flex-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.dmode {
+  flex: 1;
+  color: #060714;
+  transition: 0.2s;
+}
+.dmode:hover {
+  color: #7c4ab6;
+}
+.dmode i {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.logout {
+  flex: 1;
+  text-align: center;
+  padding: 0;
+}
+
+.logout img {
+  display: block;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.logout .btn {
+  border: 0;
+  outline: 0;
+}
+
+.logout .dropdown-menu {
+  text-align: right;
+  font-size: 15px;
+}
+.logout .dropdown-menu .dropdown-item {
+  padding: 10px;
+  transition: .3s;
+}
+.logout .dropdown-menu .dropdown-item:hover {
+  border-radius: 6px;
+}
+nav .flex-btn .dropdown-toggle::after {
+  display: none;
+}
+
+/* Navbar */
+
+#content main {
+  width: 100%;
+  padding: 36px 24px;
+  max-height: calc(100vh - 60px);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+#content main .table-wrapper {
+  max-height: 600px;
+  overflow-y: auto;
+  width: 80%;
+  margin-top: 80px;
+}
+
+#content main .table-wrapper thead tr {
+  position: sticky;
+  top: -20px;
+  box-shadow: 0px 0px 8px rgb(102, 102, 102);
+}
+
+.theme {
+  background-color: #060714 !important;
+}
+.theme .dropdown-menu {
+  background-color: #060714 !important;
+}
+.theme .dropdown-item {
+  background-color: #060714 !important;
+  color: #fff !important;
+  transition: 0.3s;
+}
+.theme .dropdown-item:hover {
+  background-color: #0C0C1E !important;
+}
+.theme #content nav {
+  background-color: #060714;
+}
+.theme #content nav::before {
+  box-shadow: 16px -20px 0 #060714;
+}
+.theme #content nav .fa-bars {
+  color: #fff;
+}
+.theme #content nav .breadcrumb-item a {
+  color: #fff;
+}
+.theme #content nav .breadcrumb-item:hover a {
+  color: #e4e4e4;
+}
+
+.theme #content nav .support a {
+  color: #fff;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.theme #content nav .support a:hover {
+  color: #e4e4e4;
+}
+.theme .dmode {
+  flex: 1;
+  color: #fff;
+  transition: 0.2s;
+}
+.theme .dmode:hover {
+  color: #7c4ab6;
+}
+.theme #content main .table-wrapper .table-dark {
+  --bs-table-bg: #0C0C1E;
+}
+
+/* laptops */
+@media (min-width: 992px) and (max-width: 1399px) {
+  #sidebar .side-menu {
+    margin-top: 35px;
+  }
+}

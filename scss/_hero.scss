@@ -1,0 +1,170 @@
+body {
+  .custom-shape-divider-top-1711922134 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+    svg {
+      position: relative;
+      display: block;
+      width: calc(300% + 1.3px);
+      height: 484px;
+    }
+    .shape-fill {
+      fill: #7C4AB6;
+    }
+  }
+  .hero {
+    min-height: calc(100vh - 82px) !important;
+    position: relative;
+    overflow-x: hidden !important;
+    nav {
+      background-color: transparent;
+      overflow-x: hidden;
+      margin-bottom: 55px;
+      .nav {
+        padding: 1px 10px;  
+        .navbar-brand {
+          margin: 0;
+        }
+        .navbar-toggler {
+          background-color: $white;
+          border: none !important;
+          outline: none !important;
+        }
+        .links {
+          justify-content: flex-end;
+          .navbar-nav {
+            align-items: center;
+            a {
+              color: $white !important;
+              font-weight: bold;
+              font-size: 17px;
+            }
+          }
+        }
+        .line {
+          position: relative;
+          left: 0;
+          bottom: -1px;
+          background-color: $white;
+          display: block;
+          width: 2px;
+          z-index: 99;
+          height: 41px;
+        }
+        .moon {
+          display: inline-block;
+          font-size: 37px;
+          cursor: pointer;
+          color: $white;
+          transition: .3s; 
+          &:hover {
+            color: $dark;
+          }
+        }
+      }
+    }  
+    .hero-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      flex-wrap: wrap;
+      .text {
+        flex: 2;
+        color: $dark !important;
+        font-weight: 800 !important;
+        p {
+          font-size: 23px !important;
+        }
+      }
+      .img {
+        flex: 1;
+      }
+    }
+    h2 {
+      color: $white;
+    }
+  }  
+}
+// Large Screens 
+@media (min-width:1400px) {
+  body {
+    .hero {
+      nav {
+        margin-bottom: 90px;
+      }
+      .lead {
+        width: 100%;
+      }
+      .titlle {
+        margin-bottom: 200px;
+      }
+      .hero-section {
+        padding-bottom: 60px;
+        .img {
+          img {
+            width: 600px;
+          }
+        }
+      }
+    }
+  }
+}
+// Laptops
+@media (min-width: 992px) and (max-width:1399px){
+  .titlle {
+    font-size: 50px !important;
+    margin-bottom: 90px !important;
+  }
+  .hero-section {
+    .img {
+      img {
+        width: 400px !important;
+      }
+    }
+  }
+}
+
+// Phones 
+@media (min-width: 57px) and (max-width: 991px) {
+  body {
+    .custom-shape-divider-top-1711922134 {
+      width: 310% !important;
+    }
+    .hero {
+      overflow-x: visible !important;
+      nav {
+        .links {
+          padding-top: 20px !important;
+          .navbar-nav {
+            align-items: flex-start !important;
+            .line {
+              display: none !important;
+            }
+            .moon {
+              color: $purple !important;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+      .titlle {
+        font-size: 30px !important;
+        margin-bottom: 170px !important;
+      }
+      .hero-section {
+        flex-direction: column;
+        .img {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

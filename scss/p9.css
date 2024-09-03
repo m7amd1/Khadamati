@@ -1,0 +1,73 @@
+/* Main Setting  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Readex Pro", sans-serif !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  opacity: 1 !important;
+}
+
+span,p {
+  font-size: 24px;
+}
+
+.font-weight p , .font-weight span 
+.font-weight input {
+  font-weight: 600 !important;
+}
+p.mzero {
+  margin-top: 3rem !important;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.button button {
+  background-color: #7c4ab6;
+  color: #FFF;
+  border: 0;
+  outline: 0;
+  width: 150px;
+  height: 40px;
+  display: block;
+  border-radius: 7px;
+  font-size: 19px;
+  transition: .3s;
+}
+.button button:hover {
+  background-color: transparent;
+  color: #7c4ab6;
+  border: 2px solid #7c4ab6;
+}
+
+@media print {
+  .section {
+    margin-top: 0 !important;
+  }
+  span,p {
+    font-size: 13px !important;
+  }
+  p.mzero {
+    margin-top: 1rem !important;
+  }
+  .button {
+    display: none;
+  }
+}

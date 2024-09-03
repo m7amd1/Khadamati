@@ -1,0 +1,379 @@
+/* Main Setting  */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Readex Pro", sans-serif !important;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.head .pic {
+  width: 70px;
+  height: 70px;
+}
+.head .pic img {
+  filter: grayscale();
+  width: 100%;
+}
+hr {
+  opacity: 1 !important;
+}
+
+.sicone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid black;
+  border-right: 0;
+}
+.sicone span {
+  font-size: 20px;
+  display: inline-block;
+  border-left: 1px solid black;
+  padding: 10px 40px;
+}
+.sicone input {
+  display: inline;
+  width: 400px;
+  outline: none !important;
+  border: 0;
+}
+.containerr {
+  margin: 40px auto;
+  border: 1px solid black;
+  width: 1300px;
+}
+.containerr .sictwo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sictwo p {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
+input {
+  display: inline-block;
+  border: 0;
+  outline: 0;  
+  width: 300px;
+  padding-right: 20px;
+}
+.sicthree {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sicthree p {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
+.empty {
+  width: 90.44px;
+  height: 44px;
+}
+.sicfour {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sicfour p {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
+.sicfive {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sicfive p {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
+.sicsix {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sicsix p {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
+.sicsev {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0;
+}
+.sicsev div {
+  padding: 40px 120px;
+  border-left: 1px solid black;
+
+}
+.sicsev .flexx {
+  display: flex;
+  flex-direction: column;
+  padding: 15.5px;
+}
+.sicsev .flexx p:first-child {
+  border-bottom: 1px solid black;
+}
+.sicsev > input {
+  margin: 0 !important;
+  padding-right: 20px;
+}
+
+.siceight {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.siceight div {
+  border: 1px solid black;
+  border-bottom: 0;
+  border-top: 0;
+  padding: 10px 68.5px;
+  width: 243px;
+  height: 44px;
+}
+
+.sicnine {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 322px;
+}
+.signn {
+  display: flex;
+  gap: 30px; 
+  border: 1px solid black;
+  width: 215px;
+  height: 75px;
+  padding: 0px 3px;
+  font-size: 15px;
+}
+.sign {
+  position: relative;
+}
+.sign::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -16px;
+  top: -2px;
+  width: 1px;
+  height: 75px;
+  background-color: black;
+}
+.sicten {
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  text-align: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.button button {
+  background-color: #7c4ab6;
+  color: #FFF;
+  border: 0;
+  outline: 0;
+  width: 150px;
+  height: 40px;
+  display: block;
+  border-radius: 7px;
+  font-size: 19px;
+  transition: .3s;
+}
+.button button:hover {
+  background-color: transparent;
+  color: #7c4ab6;
+  border: 2px solid #7c4ab6;
+}
+
+@media print {
+  body {
+    margin: 0;
+    font-size: 15px !important;
+  }
+  .containerr {
+    margin: 20px auto;
+    width: 570px !important;
+  }
+  .sicone {
+    gap: 10px;
+  }
+  .sicone span {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
+  .sicone input {
+    width: 150px;
+  }
+  .sictwo {
+    font-size: 12px;
+  }
+  .sictwo p {
+    width: 84px !important;
+    padding: 10px 10px;
+  }
+  .sictwo input {
+    width: 100px;
+  }
+  .sictwo input:last-child {
+    width: 50px;
+  }
+  .sicthree {
+    font-size: 12px;
+  }
+  .sicthree p {
+    padding: 10px 10px;
+    width: 84px !important;
+  }
+  .sicthree p.two {
+    width: 84px !important;
+  }
+  .sicthree input {
+    width: 100px !important;
+  }
+  .sicthree input:last-child {
+    width: 50px;
+  }
+  .sicthree .empty {
+    width: 91.44px;
+  }
+  .sicfour {
+    font-size: 12px;
+  }
+  .sicfour input {
+    width: 100px !important;
+  }
+  .sicfour p {
+    padding: 10px 10px !important;
+  }
+  .sicfour p:first-child {
+    width: 84px !important;
+  }
+  .sicfour p.two {
+    width: 84px !important;
+  }
+  .sicfour p.three {
+    width: 84px !important;
+    font-size: 12px !important;
+  }
+  .sicfive {
+    font-size: 12px;
+  }
+  .sicfive p {
+    padding: 10px 10px;
+    width: 84px !important;
+  }
+  .sicfive input {
+    width: 100px !important;
+  }
+  .sicsix {
+    font-size: 12px;
+  }
+  .sicsix p {
+    padding: 10px 10px;
+  }
+  .sicsix p:first-child {
+    width: 84px !important;  
+  }
+  .sicsix p:last-of-type {
+    width: 84px !important;  
+  }
+  .sicsix input {
+    width: 100px !important;
+  }
+  .sicsev {
+    font-size: 14px;
+  }
+  .sicsev div {
+    padding: 70px;
+  }
+  .sicsev .flexx {
+    font-size: 12px;
+    padding: 36px 24px;
+  }
+  .sicsev .flexx p:first-child {
+    border-bottom: 1px solid black;
+  }
+  .sicsev > input {
+    margin: 0 !important;
+    padding-right: 20px;
+  }
+  .siceight {
+    font-size: 12px;
+  }
+  .siceight div {
+    padding: 10px 12px;
+    width: 130px !important;
+    height: 44px;
+  }
+  .siceight input {
+    width: 150px !important;
+  }
+  .sicnine {
+    font-size: 12px;
+    gap: 50px !important; 
+  }
+  .sicnine div:not(:last-child) {
+    flex: 0 0 100px !important;
+  }
+  .signn {
+    gap: 20px; 
+    flex: 0 0 170px !important;
+    padding: 0px 3px;
+    font-size: 12px;
+  }
+  .button {
+    display: none;
+  }
+}

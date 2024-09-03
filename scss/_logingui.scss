@@ -1,0 +1,306 @@
+body {
+  position: relative;
+  .custom-shape-divider-top-1711922134 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+    svg {
+      position: relative;
+      display: block;
+      width: calc(300% + 1.3px);
+      height: 484px;
+    }
+    .shape-fill {
+      fill: $purple;
+    }
+  }
+  .loginPage {
+    overflow-x: hidden;
+    .nav {
+      padding: 1px 10px;  
+      .navbar-brand {
+        margin: 0;
+      }
+      .navbar-toggler {
+        background-color: $white;
+        border: none !important;
+        outline: none !important;
+      }
+      .links {
+        justify-content: flex-end;
+        a {
+          color: $white !important;
+          font-weight: bold;
+          font-size: 17px;
+        }
+      }
+    }
+    .loginForm {
+      position: relative;
+      padding: 60px 60px 30px;
+      background-color: $white;
+      box-shadow: 0px 0px 3px $purple;
+      width: 800px;
+      margin: 0 auto 10px;
+      .form-control {
+        &:focus {
+          border-color: $purple !important;
+          box-shadow: 0 0 0 0.25rem $purple !important;    
+        }
+      }
+      .group2 {
+        display: block;
+        height: 40px;
+        text-align: left;
+        padding-left: 70px;
+        padding-top: 10px;
+        font: 22px sans-serif;
+        position: relative;
+        top: 0;
+        left: 0;
+        .showpass {
+          position: absolute;
+          left: 15px;
+          bottom: 50px;
+          font-size: 18px;
+          cursor: pointer;
+        }
+      }
+      .linkks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .forgetpass {
+          font-size: 14px;
+          text-decoration: none;
+          color: inherit;
+        }   
+        p {
+          margin-bottom: 0;
+          font-size: 14px;
+        }
+      }
+      .btn {
+        background-color: $purple !important;
+        border: 1px solid $purple !important;
+        width: 100%;
+      }
+      .create-acc {
+        color: $dark;
+        font-size: 15px;
+        margin-top: 16px;
+        display: block;
+        a {
+          color: $purple;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  section.active .show-modal {
+    display: none;
+  }
+  .overlay {
+    top: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+  }
+  section.active .overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 520px;
+    width: 100%;
+    padding: 40px 20px 18px;
+    border-radius: 15px;
+    background-color: $white;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  section.active .modal-box {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .modal-box h2 {
+    font-size: 40px;
+  }
+  .modal-box p {
+    margin: 18px 0;
+  }
+  .modal-box form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .modal-box .form-control {
+    border: 2px solid $purple;
+    &:focus {
+      border-color: $purple !important;
+      box-shadow: 0 0 0 0.25rem $purple !important;
+    }
+  }
+  .alert {
+    height: 60px !important;
+    margin-bottom: 30px;
+  }
+}
+// Large Screens
+@media (min-width: 1400px) {
+  body {
+    position: relative;
+    .showmessage {
+      width: 250px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: $white;
+      background-color: $purple;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 70px;
+      font-size: 15px;
+      transition: .3s;
+      position: absolute;
+      bottom: -200px;
+      right: 0;
+      animation: slideIn 0.5s forwards, hideMessage 4s 4s forwards;
+    }
+    
+    @keyframes slideIn {
+      from { 
+        bottom: -200px; 
+      }
+      to { 
+        bottom: 70px; 
+      } 
+    }
+    @keyframes hideMessage {
+      from { 
+        opacity: 1; 
+      }
+      to { 
+        opacity: 0; 
+        bottom: 0; 
+      }
+    }
+  }
+}
+
+// Laptops
+@media (min-width:992px) and (max-width: 1399px) {
+  body {
+    position: relative;
+    .showmessage {
+      width: 250px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: $white;
+      background-color: $purple;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 70px;
+      font-size: 15px;
+      transition: .3s;
+      position: absolute;
+      bottom: 70px;
+      right: 0;
+      animation: slideIn 0.5s forwards, hideMessage 4s 4s forwards;
+    }
+    
+    @keyframes slideIn {
+      from { 
+        bottom: 0; 
+      }
+      to { 
+        bottom: 70px; 
+      } 
+    }
+    @keyframes hideMessage {
+      from { 
+        opacity: 1; 
+      }
+      to { 
+        opacity: 0; 
+        bottom: 0; 
+      }
+    }
+  }
+}
+
+
+// Phones 
+@media (min-width: 57px) and (max-width: 767px) {
+  .loginPage {
+    nav {
+      .links {
+        padding-top: 28px;
+      }
+    }
+    .loginForm {
+      width: 100% !important;
+      height: 500px;
+      .alert-message {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.theme {
+  .loginPage .loginForm {
+    background-color: $lightDark;
+    color: $white;
+    input {
+      background-color: $dark;
+      color: $white;
+      &::placeholder {
+        color: $white;
+      }
+    }
+    .create-acc {
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+  }
+  .modal-box {
+    background-color: $dark;
+  }
+  .modal-box h2 {
+    color: $white;
+  }
+  .modal-box p {
+    color: $white;
+  }
+  .modal-box .form-control {
+    background-color: $lightDark;
+    color: $white;
+    &::placeholder {
+      color: $white;
+    }
+  }
+}

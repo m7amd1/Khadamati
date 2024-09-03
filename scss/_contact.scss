@@ -1,0 +1,72 @@
+.contact {
+  overflow-x: hidden;
+  .title {
+    font-size: 40px !important;
+    &::before {
+      left: 45%;
+      width: 10%;
+    }
+  }
+  .container {
+    padding: 60px;
+    background-color: $white;
+    box-shadow: 3px 3px 20px $purple;
+    margin-bottom: 5px;
+    .flexx {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      .form {
+        flex: 1;
+        form {
+          input {
+            height: 40px;
+          }
+          input, textarea {
+            display: block;
+            border: 1px solid rgb(214, 214, 214);
+            outline: none;
+            width: 500px;
+            padding: 22px 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            resize: none;
+            color: $dark;
+          }
+          button {
+            background-color: $purple !important;
+            border: 1px solid $purple !important;
+          }
+        }
+      }
+      .img {
+        flex: 1;
+        text-align: center;
+      }
+    }
+  }
+}
+// Phones
+@media (min-width: 57px) and (max-width: 767px) {
+  .contact {
+    .title {
+      font-size: 35px !important;
+      &::before {
+        left: 31%;
+        width: 38%;
+      }
+    }
+    .flexx {
+      flex-direction: column;
+      .form {
+        form {
+          input, textarea {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}

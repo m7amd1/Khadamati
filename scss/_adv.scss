@@ -1,0 +1,63 @@
+.adv {
+  overflow-x: hidden;
+  .title {
+    font-size: 40px !important;
+    &::before {
+      left: 46%;
+      width: 8%;
+    }
+  }
+  .container {
+    padding: 60px;
+    background-color: $white;
+    box-shadow: 3px 3px 20px $purple;
+    .card-body {
+      flex: 1 1 300px !important; 
+      text-align: center !important;
+      .card-title {
+        color: $purple;
+      }
+      i {
+        font-size: 40px !important;
+        color: $purple;
+      }
+    }
+  }
+}
+//labtops
+@media (min-width: 992px) and (max-width: 1199px) {
+  .adv {
+    .container {
+      .card-body {
+        flex: 1 1 345px !important;
+        .card-text {
+          font-size: 17px !important;
+        }
+      }
+    }
+  }  
+}
+// Phones
+@media (min-width: 57px) and (max-width: 767px) {
+  .adv {
+    .title {
+      font-size: 35px !important;
+      &::before {
+        left: 36%;
+        width: 28%;
+      }
+    }
+    .container {
+      .row {
+        margin-top: 0 !important;
+        gap: 15px !important;
+      }
+      .card-body {
+        flex: 1 1 auto !important;
+        .card-text {
+          font-size: 18px !important;
+        }
+      }
+    }
+  }  
+}

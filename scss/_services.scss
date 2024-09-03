@@ -1,0 +1,67 @@
+.services {
+  overflow: hidden;
+  .title {
+    color: $dark !important;
+    font-size: 40px !important;
+    &::before {
+      left: 46%;
+      width: 8%;
+    }
+  }
+  .container {
+    padding: 60px;
+    background-color: $white;
+    box-shadow: 3px 3px 20px $purple;
+    .row {
+      gap: 60px  0 !important; 
+      .card-body {
+        flex: 1 1 230px;
+        text-align: center;
+        img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+        .card-title {
+          color: $purple;
+        }
+      }
+    }
+    .linkk {
+      display: inline-block;
+      background-color: $purple;
+      color: $white;
+      border: 2px solid $purple;
+      text-decoration: none;
+      padding: 8px 30px;
+      border-radius: 9px;
+      margin-top: 50px;
+      transition: .3s;
+      &:hover {
+        background-color: transparent;
+        color: $purple;
+        border: 2px solid $purple;
+      }
+    }
+  }
+}
+// Phones
+@media (min-width: 57px) and (max-width: 767px) {
+  .services {
+    .title {
+      font-size: 35px !important;
+      &::before {
+        left: 36%;
+        width: 27%;
+      }
+    }
+    .container {
+      .row {
+        gap: 15px !important;
+        .card-body {
+          flex: 1 1 auto !important;
+        }
+      }
+    }
+  }  
+}

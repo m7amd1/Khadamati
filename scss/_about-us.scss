@@ -1,0 +1,58 @@
+.about-us {overflow-x: hidden;
+  .title {
+    font-size: 40px !important;
+    &::before {
+      left: 46%;
+      width: 8%;
+    }
+  }
+  .flexx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    .img {
+      flex: 1;
+    }     
+    .text {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.9;
+      .bold {
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .one {
+        display: inline-block;
+        margin: 8px 0;
+      }
+      .two {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      span > span {
+        background-color: $purple;
+        color: $white;
+        padding: 3px 5px;
+        margin-left: 3px;
+      }
+    }
+  }
+}
+
+// Phones
+@media (min-width: 57px) and (max-width: 767px) {
+  .about-us {
+    .title {
+      font-size: 35px !important;
+      &::before {
+        left: 37%;
+        width: 26%;
+      }
+    }
+    .flexx {
+      flex-direction: column;
+    }
+  }
+}
